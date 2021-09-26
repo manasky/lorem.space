@@ -4,7 +4,7 @@
 # Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
 env:
   githubEmail: pouya.saadeghi@gmail.com
-  deployToRepo: <NAME OF REPO TO DEPLOY TO (E.G. <YOUR USERNAME>.github.io)>
+  deployToRepo: manasky.github.io/lorem.space
 
 name: Github Pages Astro CI
 
