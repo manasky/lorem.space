@@ -4,6 +4,7 @@
 # Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
 env:
   githubEmail: pouya.saadeghi@gmail.com
+  actorUser: manasky
   deployToRepo: lorem.space
 
 name: Github Pages Astro CI
@@ -43,8 +44,8 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: 'dist'
-          destination-github-username: ${{ github.actor }}
-          destination-repository-name: ${{ env.deployToRepo }}
+          destination-repository-username: ${{ env.actorUser }}
+          destination-repository-name: ${{ env.deployToRepodeployToRepo }}
           user-email: ${{ env.githubEmail }}
           commit-message: Deploy ORIGIN_COMMIT
           target-branch: gh-pages
