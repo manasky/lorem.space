@@ -1,0 +1,21 @@
+---
+import Seo from '../components/Seo.svelte'
+const {title} = Astro.props;
+const {theme} = Astro.props;
+---
+<html lang="en" data-theme={theme}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text x='0' y='14'>🌠</text></svg>" />
+    <link rel="stylesheet" href={Astro.resolve("../styles/global.css")} />
+    <Seo
+      title={`${title} - placeholder image generator`}
+      desc={`Lorem Ipsum fake image placeholder`}
+      img={`/card.jpg`}
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
