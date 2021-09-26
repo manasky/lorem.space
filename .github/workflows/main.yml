@@ -45,7 +45,7 @@ jobs:
         with:
           source-directory: 'dist'
           destination-repository-username: ${{ env.actorUser }}
-          destination-repository-name: ${{ env.deployToRepodeployToRepo }}
+          destination-repository-name: ${{ env.deployToRepo }}
           user-email: ${{ env.githubEmail }}
           commit-message: Deploy ORIGIN_COMMIT
           target-branch: gh-pages
