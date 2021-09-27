@@ -2,7 +2,7 @@
 <title>{title}</title>
 <meta name="description" content={desc}>
 
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={desc} />
 <meta name="twitter:image" content={img} />
