@@ -2,8 +2,8 @@
 
   <div class="text-center hero-content">
     <div>
-      <h1 class="mb-5 text-4xl xl:text-5xl font-black">{@html title}</h1>
-      <p class="mb-5 text-xl">{@html desc}</p> 
+      <h1 class="mb-5 text-4xl font-black lg:text-5xl xl:text-6xl">{@html title}</h1>
+      <p class="mb-5 text-4xl font-black -rotate-6 font-handwriting text-secondary lg:text-5xl xl:text-6xl">{@html desc}</p> 
       <slot/>
     </div>
   </div>
