@@ -1,17 +1,17 @@
 <div class="mockup-code text-left w-full max-w-[90vw]">
   <pre>
-    <code class="text-sm pr-4"><slot/></code>
+    <code class="pr-4 text-sm"><slot/></code>
   </pre>
 </div>
 
 {#if showListOfLinks == true}
-<div class="dropdown w-full">
-  <div tabindex="0" class="text-xs mx-4 link link-hover inline-block">
+<div class="w-full dropdown">
+  <div tabindex="0" class="inline-block mx-4 text-xs link link-hover">
     Show a list of links
   </div> 
-  <div tabindex="0" class="dropdown-content -mt-4 w-full">
+  <div tabindex="0" class="w-full -mt-4 dropdown-content">
 
-    <div class="bg-base-200 px-6 py-10 text-base-content rounded-box text-left w-full max-w-[90vw] text-xs">
+    <div class="bg-base-200 px-6 py-10 text-base-content rounded-box text-left w-full max-w-[90vw] text-xs overflow-x-auto">
       <pre>
 <code class="pr-4"><slot/>&hash=8B7BCDC2</code>
 <code class="pr-4"><slot/>&hash=500B67FB</code>
