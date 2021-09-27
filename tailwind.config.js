@@ -7,6 +7,13 @@ module.exports = {
   plugins: [
     require('daisyui'),
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        'handwriting': ['"Kalam"'],
+      }
+    }
+  },
   daisyui: {
     themes: [
       'synthwave'
