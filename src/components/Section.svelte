@@ -27,7 +27,7 @@
       title={sectionTitle}
       icon={sectionIcon}
     />
-    <Codes>https://api.lorem.space/image<span class="text-primary">{apiPath}</span>?w=<span class="text-primary">{width}</span>&h=<span class="text-primary">{height}</span></Codes>
+    <Codes textToCopy="https://api.lorem.space/image{apiPath}?w={width}&h={height}">https://api.lorem.space/image<span class="text-primary">{apiPath}</span>?w=<span class="text-primary">{width}</span>&h=<span class="text-primary">{height}</span></Codes>
   </div>
 
   </div>
