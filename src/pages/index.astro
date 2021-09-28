@@ -2,7 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 
 import Hero from '../components/Hero.svelte'
-import Codes from '../components/Codes.svelte'
 import Header from '../components/Header.svelte'
 import Footer from '../components/Footer.svelte'
 import Section from '../components/Section.svelte'
@@ -58,15 +57,7 @@ import Section from '../components/Section.svelte'
       client:load
       title="Placeholder Images"
       desc="but useful!"
-    >
-      <div class="max-w-md mx-auto">
-        <Codes 
-          client:idle
-          textToCopy="https://api.lorem.space/image?w=400&h=400"
-          showListOfLinks=false
-        >https://api.lorem.space/image?w=<span class="text-primary">400</span>&h=<span class="text-primary">400</span></Codes>
-      </div>
-    </Hero>
+    />
   </header>
 
   <div class="text-black bg-white">
