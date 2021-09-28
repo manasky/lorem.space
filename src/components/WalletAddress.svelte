@@ -15,7 +15,7 @@
     <div>
       <div class="inline-block py-6 mx-auto">{@html icon}</div>
       <div class="mb-2 text-xl font-bold capitalize">{fullname} Address</div>
-      <div class="mb-2 text-sm opacity-50">Donate any amount</div>
+      <div class="mb-2 text-sm opacity-50">Donate any amount 🤏</div>
       <p class="inline-block px-4 py-2 mb-6 font-mono bg-gray-200 rounded-box">{address}</p>
       <img class="mx-auto my-6 bg-gray-200 rounded" alt="{name}" width="300" height="300" src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data={fullname}:{address}">
     </div>
