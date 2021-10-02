@@ -5,6 +5,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@snowpack/plugin-dotenv": "^2.2.0",
     "astro": "^0.20.7",
     "daisyui": "^1.14.1",
     "tailwindcss": "^2.2.16"
