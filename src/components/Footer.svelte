@@ -4,8 +4,8 @@
     <div>
       <span class="footer-title">{@html title}</span> 
       <p class="opacity-50">{@html desc}</p>
-      <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-      <p>{@html contact}</p>
+      <p>Copyright © {new Date().getFullYear()} — All right reserved</p>
+      <p><a href="mailto:{contact}" class="link">Contact us</a> — <a class="link" rel="nofollow" href="https://github.com/manasky/lorem.space">Github</a></p>
     </div> 
     <div class="text-xs">
       <span class="footer-title">Donate</span>
