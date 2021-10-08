@@ -3,6 +3,7 @@
 Placeholder Images *but useful!*
 
 [https://lorem.space](https://lorem.space)
+Server repo: https://github.com/manasky/lorem-server
 
 Random movie poster
 ```
