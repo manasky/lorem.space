@@ -15,7 +15,7 @@ import process from 'node:process'
       desc={`Lorem Ipsum fake image placeholder`}
       img={Astro.site+'card.jpg'}
     />
-    {process.env.npm_lifecycle_event === "build" &&
+    {false && process.env.npm_lifecycle_event === "build" &&
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4812562253949561" crossorigin="anonymous"></script>
     }
     {process.env.npm_lifecycle_event === "build" &&
