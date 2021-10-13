@@ -46,4 +46,3 @@ Random image
 ```
 https://api.lorem.space/image?w=150&h=150
 ```
-
