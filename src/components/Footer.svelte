@@ -44,6 +44,9 @@
   </div>
 </footer>
 
+<div class="fixed inline-block bottom-3 right-3">
+  <a href="https://www.producthunt.com/posts/lorem-space?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-lorem-space" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=315891&theme=dark" alt="Lorem.space - Placeholder Images (BUT USEFUL!) | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+</div>
 
 
 
