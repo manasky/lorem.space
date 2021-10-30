@@ -16,7 +16,7 @@
   </div>
   <div tabindex="0" class="w-full -mt-4 dropdown-content">
 
-    <div class="bg-neutral text-neutral-content px-6 py-10 text-base-content rounded-box text-left w-full max-w-[90vw] text-xs overflow-x-auto relative">
+    <div class="bg-neutral text-neutral-content px-6 py-10 rounded-box text-left w-full max-w-[90vw] text-xs overflow-x-auto relative">
       <div class="absolute top-2 right-2">
         <CopyToClipboard 
           client:load 
