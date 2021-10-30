@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import CategoryItem from '../components/CategoryItem.svelte'
+let items = [
+  {
+    title:"Random movie poster",
+    slug:"movie",
+  },
+  {
+    title:"Random game cover",
+    slug:"game",
+  },
+  {
+    title:"Random album cover",
+    slug:"album",
+  },
+  {
+    title:"Random book cover",
+    slug:"book",
+  },
+  {
+    title:"Random face picture",
+    slug:"face",
+  },
+  {
+    title:"Random fashion picture",
+    slug:"fashion",
+  },
+  {
+    title:"Random shoes picture",
+    slug:"shoes",
+  },
+  {
+    title:"Random watch picture",
+    slug:"watch",
+  },
+  {
+    title:"Random furniture picture",
+    slug:"furniture",
+  },
+]
+---
+<BaseLayout>
+  
+  <h1 class="pb-4 mx-6 mb-10 text-4xl font-bold border-b-2 lg:text-5xl lg:mx-20 border-base-300">Categories</h1>
+  <div class="grid gap-6 mx-6 md:grid-cols-2 xl:grid-cols-3 lg:mx-20">
+    {items.map((item) =>
+      <CategoryItem
+        title={item.title}
+        slug={item.slug}
+      />
+    )}
+  </div>
+
+</BaseLayout>
+
+

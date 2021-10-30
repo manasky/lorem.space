@@ -1,21 +1,25 @@
 ---
 import Seo from '../components/Seo.svelte'
-const {title} = Astro.props;
-const {theme} = Astro.props;
 import process from 'node:process'
+import Header from '../components/Header.svelte'
+import Aside from '../components/Aside.svelte'
+import Footer from '../components/Footer.svelte'
+import Hero from '../components/Hero.svelte'
+import Ad from '../components/Ad.svelte'
+import navItems from '../data/nav.js'
 ---
-<html lang="en" data-theme={theme}>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text x='0' y='14'>🌠</text></svg>" />
     <link rel="stylesheet" href={Astro.resolve("../styles/global.css")} />
     <Seo
-      title={`${title} - placeholder image generator`}
+      title={`Lorem.space - placeholder image generator`}
       desc={`Lorem Ipsum fake image placeholder`}
       img={Astro.site+'card.jpg'}
     />
-    {false && process.env.npm_lifecycle_event === "build" &&
+    {process.env.npm_lifecycle_event === "build" &&
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4812562253949561" crossorigin="anonymous"></script>
     }
     {process.env.npm_lifecycle_event === "build" &&
@@ -30,9 +34,54 @@ import process from 'node:process'
         gtag('config', 'G-PES38TLB35');
       </script>
     }
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <slot />
+
+    <header class="bg-neutral text-neutral-content">
+      <div class="md:hidden">
+        <Header
+          title="🌠 &nbsp; Lorem.space"
+          links={navItems}
+        />
+      </div>
+    </header>
+    <div class="flex justify-center w-full">
+      <aside class="hidden w-64 flex-0 lg:w-72 md:block bg-neutral text-neutral-content">
+        <Aside
+          title="🌠 &nbsp; Lorem.space"
+          desc="Placeholder image API"
+          links={navItems}
+        />
+      </aside>
+
+      <main class="flex-1 pb-20 overflow-x-auto">
+        {Astro.site.toString() === Astro.request.url.toString() &&
+          <div class="bg-[#9b3896] text-white bg-cover min-h-[50vh] bg-bottom" style="background-image: url(/bg.jpg);">
+            <Hero
+              client:load
+              title="API for placeholder images"
+              desc="but useful!"
+            />
+          </div>
+        }
+        <div class="flex justify-center px-5 py-20"><Ad/></div>
+        <slot />
+
+        {Astro.site.toString() === Astro.request.url.toString() &&
+          <div class="flex justify-center px-5 pt-20"><Ad/></div>
+        }
+      </main>
+    </div>
+
+    <Footer
+      title="Lorem.space"
+      contact="hi@lorem.space"
+    />
+
   </body>
 </html>

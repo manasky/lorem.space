@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+<BaseLayout>
+  
+  <h1 class="pb-4 mx-6 mb-10 text-4xl font-bold border-b-2 lg:text-5xl lg:mx-20 border-base-300">How to use API</h1>
+
+  <div class="mx-6 lg:mx-20">
+
+    Use this address for images:
+    <div class="my-10 mockup-code">
+      <pre>
+        <code>https://api.lorem.space/image/<span class="text-primary">movie</span>?<span class="text-secondary">w=150</span>&<span class="text-accent">h=220</span></code>
+      </pre>
+    </div>
+
+    <span class="badge text-secondary">w=150</span> is the width of image. You can use any size but the minimum size is 8 and maximum size is 2000 pixels)
+    <br>
+    <span class="badge text-accent">h=220</span> is the width of image. You can use any size but the minimum size is 8 and maximum size is 2000 pixels)
+    <br>
+    <span class="badge text-primary">movie</span> is the name of category.
+    It can be any of these categories:
+    <div class="my-10 mockup-code">
+      <pre><code>movie</code></pre>
+      <pre><code>game</code></pre>
+      <pre><code>album</code></pre>
+      <pre><code>book</code></pre>
+      <pre><code>face</code></pre>
+      <pre><code>fashion</code></pre>
+      <pre><code>shoes</code></pre>
+      <pre><code>watch</code></pre>
+      <pre><code>furniture</code></pre>
+    </div>
+
+  </div>
+
+</BaseLayout>
+
+

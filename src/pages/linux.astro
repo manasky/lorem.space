@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+<BaseLayout>
+  
+  <h1 class="pb-4 mx-6 mb-10 text-4xl font-bold border-b-2 lg:text-5xl lg:mx-20 border-base-300">Run Linux binary server</h1>
+
+  <div class="mx-6 lg:mx-20">
+
+    1. Download latest binary for Linux: <a class="link" href="https://github.com/manasky/lorem-server/releases" target="_blank">https://github.com/manasky/lorem-server/releases</a>
+    <br>
+    2. Extract file
+    <br>
+    3. Open Terminal and navigate to the extracted folder.
+    4. Run the app (also grant permissions if needed):
+    <div class="my-10 mockup-code">
+      <pre data-prefix="$">
+        <code>./lorem-server --host "127.0.0.1:<span class="text-primary">8080</span>" --dir "<span class="text-secondary">~/Pictures</span>"</code>
+      </pre>
+    </div>
+
+    This will run the server on port <span class="badge text-primary">8080</span> 
+    and serves images from <span class="badge text-secondary">~/Pictures</span> directory
+
+  </div>
+
+</BaseLayout>
+
+

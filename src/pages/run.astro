@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+<BaseLayout>
+  
+  <h1 class="pb-4 mx-6 mb-10 text-4xl font-bold border-b-2 lg:text-5xl lg:mx-20 border-base-300">Run Go server on local</h1>
+
+  <div class="mx-6 lg:mx-20">
+
+    1. Install Go: <a class="link" href="https://golang.org/dl/" target="_blank">https://golang.org/dl/</a>
+    <br>
+    2. Clone the <a class="link" href="https://github.com/manasky/lorem-server" target="_blank">lorem.space server repo</a>
+    <br>
+    3. Go to the directory put some images in the <span class="badge">/images</span> directory
+    4. Run Go server:
+    <div class="my-10 mockup-code">
+      <pre data-prefix="$">
+        <code>go run main.go</code>
+      </pre>
+    </div>
+
+    Or set a custom path for images directory using <span class="badge text-primary">--dir</span> flag:
+    <div class="my-10 mockup-code">
+      <pre data-prefix="$">
+        <code>$ go run main.go <span class="text-primary">--dir="/IMAGE/DIRECTORY/PATH"</span></code>
+      </pre>
+    </div>
+
+
+  </div>
+
+</BaseLayout>
+
+

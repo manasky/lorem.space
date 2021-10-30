@@ -11,7 +11,7 @@
 <input type="checkbox" id="{name}" class="modal-toggle"> 
 <label class="cursor-pointer modal" for="{name}">
   <!-- svelte-ignore a11y-label-has-associated-control -->
-  <label class="text-center text-black bg-white modal-box">
+  <label class="text-center text-base-content bg-base-100 modal-box">
     <div>
       <div class="inline-block py-6 mx-auto">{@html icon}</div>
       <div class="mb-2 text-xl font-bold capitalize">{fullname} Address</div>

@@ -1,5 +1,5 @@
 <div>
-  <h2 class="flex items-center mb-5 text-2xl font-black md:text-3xl xl:text-4xl">
+  <h2 class="flex items-center mb-5 text-lg font-black md:text-xl xl:text-2xl">
     {@html icon}
     <span class="w-2"></span>
     {@html title}

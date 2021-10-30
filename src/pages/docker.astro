@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+<BaseLayout>
+  
+  <h1 class="pb-4 mx-6 mb-10 text-4xl font-bold border-b-2 lg:text-5xl lg:mx-20 border-base-300">Run server with Docker</h1>
+
+  <div class="mx-6 lg:mx-20">
+
+    1. Install Docker: <a class="link" href="https://docs.docker.com/get-docker/" target="_blank">https://docs.docker.com/get-docker/</a>
+    <br>
+    2. Pull:
+    <div class="my-10 mockup-code">
+      <pre data-prefix="$">
+        <code>docker pull ghcr.io/manasky/lorem-server:latest</code>
+      </pre>
+    </div>
+    3. Create an <span class="badge">.env</span> file:
+    <div class="my-10 mockup-code">
+      <pre><code>HOST=0.0.0.0:8080</code></pre>
+      <pre><code>DIR=/app/images</code></pre>
+      <pre><code>MIN_WIDTH=20</code></pre>
+    </div>
+    4. Run server:
+    <div class="my-10 mockup-code">
+      <pre data-prefix="$">
+        <code>docker run --env-file=./.env -p 8080:<span class="text-primary">8090</span> -v <span class="text-secondary">~/Pictures</span>:/app/images ghcr.io/manasky/lorem-server:latest</code>
+      </pre>
+    </div>
+    This will run the server on port <span class="badge text-primary">8090</span> 
+    and serves images from <span class="badge text-secondary">~/Pictures</span> directory
+    <br>
+    
+    <div class="my-4 alert">
+      <div>
+        <div>
+          <span class="badge">--env-file</span> sets the application environment variables path. <span class="badge badge-outline">.env</span> file exists in the current path.
+        </div>
+      </div>
+    </div>
+    <div class="my-4 alert">
+      <div>
+        <div>
+          <span class="badge">-p 8080:8080</span> sets up a port forward. The application container will listen to the <span class="badge badge-outline">8080</span> port (set in the <span class="badge badge-outline">.env</span> file as HOST). 
+          This flag maps the container's port <span class="badge badge-outline">8080</span> to port <span class="badge badge-outline">8090</span> on the host (here, your localhost).
+        </div>
+      </div>
+    </div>
+    <div class="my-4 alert">
+      <div>
+        <div>
+          <span class="badge">~/Pictures:/app/images</span> sets up a bindmount volume that links the directory <span class="badge badge-outline">/app/images</span> from inside the app container to the directory <span class="badge badge-outline">~/Pictures</span> on the host machine (here, your system). 
+          The app image directory is set in the <span class="badge badge-outline">.env</span> file as <span class="badge badge-outline">/app/images</span>, so here the <span class="badge badge-outline">~/Pictures</span> is mounted to that.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</BaseLayout>
+
+

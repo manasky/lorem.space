@@ -1,6 +1,8 @@
 
 <footer class="p-10 bg-neutral text-neutral-content">
-  <div class="max-w-5xl mx-auto footer">
+  <div class="mx-auto max-w-7xl footer">
+    <div>
+    </div>
     <div>
       <span class="footer-title">{@html title}</span> 
       <p>

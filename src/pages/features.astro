@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+<BaseLayout>
+  
+  <h1 class="pb-4 mx-6 mb-10 text-4xl font-bold border-b-2 lg:text-5xl lg:mx-20 border-base-300">Features</h1>
+  <div class="grid gap-6 mx-6 md:grid-cols-2 xl:grid-cols-3 lg:mx-20">
+
+    <div class="transition-all duration-200 card bg-base-200 hover:shadow-xl hover:-translate-y-2 hover:bg-base-100">
+      <div class="text-center card-body">
+        <svg class="w-10 h-10 mx-auto mb-6 text-blue-500 fill-current" xmlns="http://www.w3.org/2000/svg" width="1792" height="1792" viewBox="0 0 1792 1792"><path d="M1376 768q40 0 68 28t28 68v576q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-576q0-40 28-68t68-28h32v-320q0-185 131.5-316.5t316.5-131.5 316.5 131.5 131.5 316.5q0 26-19 45t-45 19h-64q-26 0-45-19t-19-45q0-106-75-181t-181-75-181 75-75 181v320h736z"/></svg>
+        <h2 class="card-title">Open source</h2> 
+        <p>Lorem.space is open source and welcomes contributions</p>
+      </div>
+    </div>
+
+    <div class="transition-all duration-200 card bg-base-200 hover:shadow-xl hover:-translate-y-2 hover:bg-base-100">
+      <div class="text-center card-body">
+        <svg class="w-10 h-10 mx-auto mb-6 text-pink-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048"><path d="M896 1280q0 82-33.5 156.5T768 1566v458l-256-128-256 128v-458q-61-55-94.5-129.5T128 1280q0-79 30-149t82.5-122.5 122-82.5T512 896q79 0 149 30.5t122 82.5 82.5 122 30.5 149zm-384 256q53 0 99.5-20t81.5-55 55-81.5 20-99.5-20-99.5-55-81.5-81.5-55-99.5-20-99.5 20-81.5 55-55 81.5-20 99.5 20 99.5 55 81.5 81.5 55 99.5 20zm128 106q-61 22-123 22-70 0-133-22v174l128-64 128 64v-174zM1920 549v1499H896v-128h896V640h-512V128H384v624q-33 8-65.5 20T256 800V0h1115zm-219-37l-293-293v293h293z"/></svg>
+        <h2 class="card-title">MIT License</h2> 
+        <p>Free to use for personal and commerical projects</p>
+      </div>
+    </div>
+    
+    <div class="transition-all duration-200 card bg-base-200 hover:shadow-xl hover:-translate-y-2 hover:bg-base-100">
+      <div class="text-center card-body">
+        <svg class="w-10 h-10 mx-auto mb-6 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path d="M21.78,11.88l-2-2.5A1,1,0,0,0,19,9H13V3a1,1,0,0,0-2,0V4H5a1,1,0,0,0-.78.38l-2,2.5a1,1,0,0,0,0,1.24l2,2.5A1,1,0,0,0,5,11h6v9H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2H13V16h6a1,1,0,0,0,.78-.38l2-2.5A1,1,0,0,0,21.78,11.88ZM11,9H5.48L4.28,7.5,5.48,6H11Zm7.52,5H13V11h5.52l1.2,1.5Z"/></svg>
+        <h2 class="card-title">Categorized</h2> 
+        <p>Images are categorized for real world use</p>
+      </div>
+    </div>
+    
+    <div class="transition-all duration-200 card bg-base-200 hover:shadow-xl hover:-translate-y-2 hover:bg-base-100">
+      <div class="text-center card-body">
+        <svg class="w-10 h-10 mx-auto mb-6 text-purple-500 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><polygon fill-rule="evenodd" points="13.414 12 19 17.586 19 14 21 14 21 21 14 21 14 19 17.586 19 12 13.414 6.414 19 10 19 10 21 3 21 3 14 5 14 5 17.586 10.586 12 5 6.414 5 10 3 10 3 3 10 3 10 5 6.414 5 12 10.586 17.586 5 14 5 14 3 21 3 21 10 19 10 19 6.414"/></svg>
+        <h2 class="card-title">Custom sizes</h2> 
+        <p>Images are available in custom sizes.</p>
+      </div>
+    </div>
+    
+    <div class="transition-all duration-200 card bg-base-200 hover:shadow-xl hover:-translate-y-2 hover:bg-base-100">
+      <div class="text-center card-body">
+        <svg class="w-10 h-10 mx-auto mb-6 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M 5 5 L 5 27 L 27 27 L 27 9.59375 L 26.71875 9.28125 L 22.71875 5.28125 L 22.40625 5 Z M 7 7 L 10 7 L 10 13 L 22 13 L 22 7.4375 L 25 10.4375 L 25 25 L 23 25 L 23 16 L 9 16 L 9 25 L 7 25 Z M 12 7 L 16 7 L 16 9 L 18 9 L 18 7 L 20 7 L 20 11 L 12 11 Z M 11 18 L 21 18 L 21 25 L 11 25 Z"/></svg>
+        <h2 class="card-title">Cached images</h2> 
+        <p>Images are cached after generation so they will load faster</p>
+      </div>
+    </div>
+    
+    <div class="transition-all duration-200 card bg-base-200 hover:shadow-xl hover:-translate-y-2 hover:bg-base-100">
+      <div class="text-center card-body">
+        <svg class="w-10 h-10 mx-auto mb-6 text-blue-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 2048"><path transform="scale(4 4) translate(0 0)" d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
+        <h2 class="card-title">Dockerized application</h2> 
+        <p>Doceker image is available to run</p>
+      </div>
+    </div>
+    
+    <div class="transition-all duration-200 card bg-base-200 hover:shadow-xl hover:-translate-y-2 hover:bg-base-100">
+      <div class="text-center card-body">
+        <svg class="w-10 h-10 mx-auto mb-6 text-red-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M 5 6 L 5 19.5625 L 2.71875 21.875 C 2.265625 22.328125 2 22.953125 2 23.59375 C 2 24.914063 3.085938 26 4.40625 26 L 27.59375 26 C 28.914063 26 30 24.914063 30 23.59375 C 30 22.953125 29.734375 22.328125 29.28125 21.875 L 27 19.5625 L 27 6 Z M 7 8 L 25 8 L 25 19 L 7 19 Z M 6.4375 21 L 25.5625 21 L 27.875 23.28125 C 27.953125 23.359375 28 23.484375 28 23.59375 C 28 23.835938 27.835938 24 27.59375 24 L 4.40625 24 C 4.164063 24 4 23.835938 4 23.59375 C 4 23.484375 4.046875 23.359375 4.125 23.28125 Z"/></svg>
+        <h2 class="card-title">OS specific builds</h2> 
+        <p>Available for download as Windows, MacOS or Linux app</p>
+      </div>
+    </div>
+
+  </div>
+
+</BaseLayout>
+
+
