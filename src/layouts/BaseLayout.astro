@@ -19,9 +19,9 @@ import navItems from '../data/nav.js'
       desc={`Lorem Ipsum fake image placeholder`}
       img={Astro.site+'card.jpg'}
     />
-    {process.env.npm_lifecycle_event === "build" &&
+    <!-- {process.env.npm_lifecycle_event === "build" && -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4812562253949561" crossorigin="anonymous"></script>
-    }
+    <!-- } -->
     {process.env.npm_lifecycle_event === "build" &&
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-PES38TLB35"></script>
     }
@@ -69,11 +69,11 @@ import navItems from '../data/nav.js'
             />
           </div>
         }
-        <div class="flex justify-center px-5 py-20"><Ad/></div>
+        <div class="flex justify-center px-5 py-6"><Ad/></div>
         <slot />
 
         {Astro.site.toString() === Astro.request.url.toString() &&
-          <div class="flex justify-center px-5 pt-20"><Ad/></div>
+          <div class="flex justify-center px-5 pt-6"><Ad/></div>
         }
       </main>
     </div>
