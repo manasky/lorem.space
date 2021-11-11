@@ -4,8 +4,8 @@
 </div>
 <div class="sticky top-0">
   <ul class="p-2 lg:p-4 menu">
-    {#each links as { label, href, icon }, i}
-      <li><a href={href} class="flex gap-3">
+    {#each links as { label, href, icon, target }, i}
+      <li><a href={href} class="flex gap-3" target={target ? target : ""}>
         <span>{@html icon}</span>
         <span class="text-xs lg:text-sm">{label}</span>
       </a></li>
