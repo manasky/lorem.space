@@ -1,3 +1,7 @@
+# 🛑 Warning: [Lorem.space](https://lorem.space/) website will shut down soon. Please run [the open-source script](https://github.com/manasky/lorem-server) on your own server or use another placeholder image generator
+
+
+
 [![Lorem.space](/public/header.png)](https://lorem.space)
 # Lorem.space
 Placeholder Images *but useful!*
